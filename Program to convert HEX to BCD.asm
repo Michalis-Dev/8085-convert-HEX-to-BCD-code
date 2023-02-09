@@ -14,7 +14,7 @@ XRA A		; clear accumulator
 MOV C,M		; get hex data
 LOOP: ADI 01H	; count the number one by one
 DAA		; adjust for BCD count
-JNC SKIP	; jump to skip
+JNC SKIP	; jump to skip line 19
 INR D		; increase D
 SKIP: DCR C	; decrease C register
 JNZ LOOP 	; jump to loop
